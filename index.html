@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/todo.css">
+  <script src="assets/js/todo.js" defer></script>
+</head>
+<body>
+  <div class="container" id="contianer">
+    <div class="header">
+      <h1>TODO</h1>
+      <button id="themeBtn"><img id="themeImg" src="assets/img/moon-icon.svg" alt=""></button>
+    </div> 
+    <div class="input-box">
+      <input type="text" placeholder="Create a new todo…" id="inputTodo">
+      <input type="checkbox" id="addTodo">
+      <ul class="todo-list">
+        <li class="todo-list-item">
+          <input type="checkbox" class="todoCompleted">
+          <h6>Jog around the park 3x</h6>
+          <button id="clearItem"><img src="assets/img/x-icon.svg" alt=""></button>
+        </li>
+        <li class="todo-list-item">
+          <input type="checkbox" class="todoCompleted">
+          <h6>Jog around the park 3x</h6>
+          <button><img src="assets/img/x-icon.svg" alt=""></button>
+        </li>
+
+
+      </ul>
+      <div class="todo-info">
+        <h5>0 items left</h5>
+        <div>
+          <button class="mobile-none">All</button>
+          <button class="mobile-none">Active</button>
+          <button class="mobile-none">Completed</button>
+        </div>
+        <button id="btnClear">Clear Completed</button>
+      </div>
+      <div class="btn-group desktop-none"> 
+        <button>All</button>
+        <button>Active</button>
+        <button>Completed</button>
+      </div>
+      <p>Drag and drop to reorder list</p>
+    </div>
+  </div>
+
+  
+</body>
+</html>
